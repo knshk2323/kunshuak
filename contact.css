@@ -1,4 +1,3 @@
-/* Обновленный стиль для body */
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     background-color: #fdfdfd;
@@ -7,7 +6,7 @@ body {
     padding: 0;
 }
 
-/* Стили для header с градиентом */
+
 header {
     background: linear-gradient(45deg, #1C3D5A, #204a72);
     color: #DAA520;
@@ -17,7 +16,6 @@ header {
     border-bottom: 5px solid #DAA520;
 }
 
-/* Анимация и стили для навигации */
 nav {
     text-align: center;
     margin-bottom: 20px;
@@ -37,10 +35,9 @@ nav a {
 nav a:hover {
     background-color: #DAA520;
     color: #1C3D5A;
-    transform: scale(1.1); /* Легкое увеличение при наведении */
+    transform: scale(1.1); 
 }
 
-/* Основные стили секций */
 section {
     margin: 0 auto;
     padding: 20px;
@@ -50,7 +47,7 @@ section {
     background-color: #fff;
 }
 
-/* Стили для заголовков секций */
+
 h2 {
     color: #DAA520;
     border-bottom: 2px solid #DAA520;
@@ -59,7 +56,6 @@ h2 {
     text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.15);
 }
 
-/* Стили для блоков с контактной информацией */
 .contact-info, .feedback-form, .working-hours, .reservation-info {
     margin-bottom: 30px;
     padding: 15px;
@@ -70,7 +66,6 @@ h2 {
 
 
 
-/* Стили для формы обратной связи */
 .feedback-form input, .feedback-form textarea {
     margin-bottom: 15px;
     padding: 12px;
@@ -79,13 +74,11 @@ h2 {
     transition: border-color 0.3s ease, box-shadow 0.3s ease;
 }
 
-/* Анимация для полей формы */
 .feedback-form input:focus, .feedback-form textarea:focus {
     border-color: #DAA520;
     box-shadow: 0 0 10px rgba(218, 165, 32, 0.2);
 }
 
-/* Стили для кнопки отправки */
 .feedback-form input[type="submit"] {
     background-color: #1C3D5A;
     color: #F5F5DC;
@@ -98,7 +91,6 @@ h2 {
     transform: scale(1.05);
 }
 
-/* Стили для футера */
 footer {
     background-color: #1C3D5A;
     color: #F5F5DC;
