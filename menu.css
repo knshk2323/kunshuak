@@ -1,0 +1,122 @@
+/* Обновленный стиль для body */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #fdfdfd;
+    color: #4B2E18;
+    margin: 0;
+    padding: 0;
+}
+
+/* Стили для header с градиентом */
+header {
+    background: linear-gradient(45deg, #1C3D5A, #204a72);
+    color: #F5F5DC;
+    text-align: center;
+    padding: 30px 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 1);
+    border-bottom: 5px solid #DAA520;
+}
+
+/* Стили для заголовков */
+h1 {
+    color: #DAA520;
+    text-align: center;
+    margin-top: 20px;
+}
+
+/* навигацияға стиль мен анимация */
+nav {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+nav a {
+    color: #DAA520;
+    text-decoration: none;
+    font-weight: bold;
+    margin: 0 15px;
+    padding: 8px 15px;
+    border-radius: 25px;
+    background: rgba(218, 165, 32, 0.1);
+    transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease;
+}
+
+nav a:hover {
+    background-color: #DAA520;
+    color: #1C3D5A;
+    transform: scale(1.1); /* үлкейеді */
+}
+
+
+section {
+    margin: 0 auto;
+    padding: 20px;
+    max-width: 1200px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    background-color: #fff;
+}
+
+/* секция тақырыбына стиль */
+h2 {
+    color: #DAA520;
+    border-bottom: 2px solid #DAA520;
+    padding-bottom: 10px;
+    margin-bottom: 15px;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.15);
+}
+
+
+.dish-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    padding: 15px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+    transition: transform 0.2s ease;
+}
+
+.dish-container:hover {
+    transform: scale(1.05); /* үлкейеді */
+}
+
+/* Стили для изображений блюд */
+.dish-container img.dish-photo {
+    width: 150px;
+    height: auto;
+    margin-left: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.dish-container div {
+    flex-grow: 1;
+}
+
+/* Стили для текста */
+.dish h3 {
+    font-size: 1.4em;
+    color: #4B2E18;
+    margin-bottom: 8px;
+}
+
+.dish p {
+    margin: 5px 0;
+    font-size: 1.1em;
+    color: #4B2E18;
+}
+
+/* Стили для футера */
+footer {
+    background-color: #1C3D5A;
+    color: #F5F5DC;
+    text-align: center;
+    padding: 5px;
+    position: fixed;
+    width: 100%;
+    bottom: 0px;
+    border-top: 5px solid #DAA520;
+}

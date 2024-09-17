@@ -1,0 +1,112 @@
+/* Обновленный стиль для body */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #fdfdfd;
+    color: #4B2E18;
+    margin: 0;
+    padding: 0;
+}
+
+/* Стили для header с градиентом */
+header {
+    background: linear-gradient(45deg, #1C3D5A, #204a72);
+    color: #DAA520;
+    text-align: center;
+    padding: 30px 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-bottom: 5px solid #DAA520;
+}
+
+/* Анимация и стили для навигации */
+nav {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+nav a {
+    color: #DAA520;
+    text-decoration: none;
+    font-weight: bold;
+    margin: 0 15px;
+    padding: 8px 15px;
+    border-radius: 25px;
+    background: rgba(218, 165, 32, 0.1);
+    transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease;
+}
+
+nav a:hover {
+    background-color: #DAA520;
+    color: #1C3D5A;
+    transform: scale(1.1); /* Легкое увеличение при наведении */
+}
+
+/* Основные стили секций */
+section {
+    margin: 0 auto;
+    padding: 20px;
+    max-width: 1200px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    background-color: #fff;
+}
+
+/* Стили для заголовков секций */
+h2 {
+    color: #DAA520;
+    border-bottom: 2px solid #DAA520;
+    padding-bottom: 10px;
+    margin-bottom: 15px;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.15);
+}
+
+/* Стили для блоков с контактной информацией */
+.contact-info, .feedback-form, .working-hours, .reservation-info {
+    margin-bottom: 30px;
+    padding: 15px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+}
+
+
+
+/* Стили для формы обратной связи */
+.feedback-form input, .feedback-form textarea {
+    margin-bottom: 15px;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Анимация для полей формы */
+.feedback-form input:focus, .feedback-form textarea:focus {
+    border-color: #DAA520;
+    box-shadow: 0 0 10px rgba(218, 165, 32, 0.2);
+}
+
+/* Стили для кнопки отправки */
+.feedback-form input[type="submit"] {
+    background-color: #1C3D5A;
+    color: #F5F5DC;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.feedback-form input[type="submit"]:hover {
+    background-color: #DAA520;
+    transform: scale(1.05);
+}
+
+/* Стили для футера */
+footer {
+    background-color: #1C3D5A;
+    color: #F5F5DC;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.2);
+    border-top: 5px solid #DAA520;
+}
