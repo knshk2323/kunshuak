@@ -30,11 +30,6 @@ nav a:hover {
     transform: scale(1.1); 
 }
 
-nav a:hover {
-    color: #FFD700; 
-    transform: scale(1.1);
-}
-
 h1 {
     color: #DAA520;
 }
