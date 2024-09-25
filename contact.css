@@ -1,7 +1,7 @@
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color: #fdfdfd;
-    color: #4B2E18;
+    background-color: #F5F5DC;
+    color: #1C3D5A;
     margin: 0;
     padding: 0;
 }
@@ -11,8 +11,7 @@ header {
     background: linear-gradient(45deg, #1C3D5A, #204a72);
     color: #DAA520;
     text-align: center;
-    padding: 30px 20px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 15px;
     border-bottom: 5px solid #DAA520;
 }
 
@@ -28,7 +27,6 @@ nav a {
     margin: 0 15px;
     padding: 8px 15px;
     border-radius: 25px;
-    background: rgba(218, 165, 32, 0.1);
     transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease;
 }
 
@@ -53,7 +51,6 @@ h2 {
     border-bottom: 2px solid #DAA520;
     padding-bottom: 10px;
     margin-bottom: 15px;
-    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.15);
 }
 
 .contact-info, .feedback-form, .working-hours, .reservation-info {
@@ -61,7 +58,6 @@ h2 {
     padding: 15px;
     background-color: #f9f9f9;
     border-radius: 8px;
-    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
 }
 
 
@@ -76,7 +72,6 @@ h2 {
 
 .feedback-form input:focus, .feedback-form textarea:focus {
     border-color: #DAA520;
-    box-shadow: 0 0 10px rgba(218, 165, 32, 0.2);
 }
 
 .feedback-form input[type="submit"] {
@@ -97,8 +92,23 @@ footer {
     text-align: center;
     padding: 10px;
     position: fixed;
-    width: 100%;
     bottom: 0;
-    box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.2);
+    width: 100%;
     border-top: 5px solid #DAA520;
+}
+.btn-primary{
+    background-color: #1C3D5A;
+    color: #f9f9f9; 
+}
+.btn-primary:hover {
+    background-color: #f9f9f9; 
+    color: #1C3D5A; 
+}
+.btn-outline-secondary{
+    background-color: #1C3D5A;
+    color: #f9f9f9;
+}
+.btn-outline-secondary:hover{
+    background-color: #f9f9f9;
+    color: #1C3D5A;
 }
