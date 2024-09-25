@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About Restaurant</title>
     <link rel="stylesheet" href="./first.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </head>
 <body>
     <header>
@@ -27,7 +29,30 @@
             <p>Our mission is to preserve and pass on the culinary heritage of the Kazakh people while making it accessible to today’s generation. We are dedicated to ensuring that every guest not only discovers the distinct flavors of Kazakh cuisine but also experiences the warmth and hospitality that are the hallmarks of our culture. We pay meticulous attention to detail, sourcing fresh, eco-friendly products, supporting local farmers, and incorporating modern cooking techniques—all while honoring traditional methods.</p>
             <p>At Kıiz úı, every visit becomes more than just a meal; it’s a cultural journey. Our dishes offer a taste of Kazakhstan’s rich culinary heritage, providing an opportunity for guests to connect with our traditions and savor the essence of our land. Join us for an unforgettable dining experience where every bite tells a story and every meal is a celebration of Kazakhstan’s rich culinary legacy.</p>
         </section>
-        <img src="concept.jpg" alt="Kıiz úı Restaurant Photo">
+
+    
+        <!--Карусель -->
+        <div id="restCarousel" class="carousel slide">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="concept.jpg" class="d-block w-100" alt="PHoto 1">
+              </div>
+              <div class="carousel-item">
+                <img src="photo3.jpg" class="d-block w-100" alt="PHoto 2">
+              </div>
+              <div class="carousel-item">
+                <img src="photo1.jpg" class="d-block w-100" alt="PHoto 3">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#restCarousel" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#restCarousel" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
     </main>
     
     <footer>
