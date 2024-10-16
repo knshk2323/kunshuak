@@ -30,11 +30,6 @@ nav a:hover {
     transform: scale(1.1); 
 }
 
-nav a:hover {
-    color: #FFD700; 
-    transform: scale(1.1);
-}
-
 h1 {
     color: #DAA520;
 }
@@ -66,6 +61,7 @@ img {
     border-radius: 10px; 
     transition: transform 0.3s ease;
 }
+
 img:hover {
     transform: scale(1.05); 
 }
@@ -80,11 +76,68 @@ footer {
     width: 100%;
     border-top: 5px solid #DAA520;
 }
+
 .btn-primary{
     background-color: #1C3D5A;
     color: #f9f9f9; 
 }
+
 .btn-primary:hover {
     background-color: #f9f9f9; 
     color: #1C3D5A; 
+}
+
+/* Темная тема */
+.dark-theme {
+    background-color: #333;
+    color: #f5f5f5;
+}
+
+.dark-theme header {
+    background-color: #222;
+    color: #FFD700;
+}
+
+.dark-theme nav a {
+    color: #FFD700;
+}
+
+
+
+.dark-theme nav a:hover {
+    background-color: #FFD700;
+    color: #222;
+}
+
+.dark-theme section {
+    background-color: #555;
+    color: #f5f5f5;
+}
+
+.dark-theme .container {
+    background-color: #555;
+}
+
+.dark-theme footer {
+    background-color: #222;
+    color: #FFD700;
+}
+
+.dark-theme .btn-primary {
+    background-color: #1C3D5A;
+    color: #f9f9f9; 
+}
+
+.dark-theme .btn-primary:hover {
+    background-color: #f9f9f9; 
+    color: #1C3D5A; 
+}
+
+.dark-theme .btn-primary{
+    background-color: #222;
+    color: #FFD700; 
+}
+.dark-theme .btn-primary:hover {
+    background-color: #f9f9f9; 
+    color: #222; 
 }

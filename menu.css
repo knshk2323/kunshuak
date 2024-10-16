@@ -114,3 +114,48 @@ footer {
     width: 100%;
     border-top: 5px solid #DAA520;
 }
+
+
+/* Темная тема */
+.dark-theme {
+    background-color: #333;
+    color: #f5f5f5;
+}
+
+.dark-theme header {
+    background-color: #222;
+    color: #FFD700;
+}
+
+.dark-theme nav a {
+    color: #FFD700;
+}
+
+.dark-theme nav a:hover {
+    background-color: #FFD700;
+    color: #222;
+}
+
+.dark-theme section {
+    background-color: #444;
+    color: #f5f5f5;
+}
+
+.dark-theme .dish-container {
+    background-color: #555;
+}
+
+.dark-theme footer {
+    background-color: #222;
+    color: #FFD700;
+}
+
+.dark-theme .btn-primary{
+    background-color: #222;
+    color: #FFD700; 
+}
+.dark-theme .btn-primary:hover {
+    background-color: #f9f9f9; 
+    color: #222; 
+}
+

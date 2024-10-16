@@ -6,7 +6,6 @@ body {
     padding: 0;
 }
 
-
 nav a {
     color: #DAA520; 
     text-decoration: none;
@@ -31,8 +30,7 @@ header {
     border-bottom: 5px solid #DAA520;
 }
 
-header nav a:hover,
-header nav a:focus {
+header nav a:hover{
     color: #F5F5DC; 
 }
 
@@ -62,6 +60,37 @@ main img {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
 }
 
+
+.dark-theme {
+    background-color: #333;
+    color: #f5f5f5;
+}
+
+.dark-theme header {
+    background-color: #222;
+    color: #FFD700;
+}
+
+.dark-theme nav a {
+    color: #FFD700;
+}
+
+.dark-theme nav a:hover {
+    background-color: #FFD700;
+    color: #222;
+}
+
+
+.dark-theme .dish-container {
+    background-color: #555;
+}
+
+.dark-theme footer {
+    background-color: #222;
+    color: #FFD700;
+}
+
+
 p {
     line-height: 1.6; 
     margin-bottom: 1em; 
@@ -71,9 +100,27 @@ footer {
     background-color: #1C3D5A;
     color: #F5F5DC;
     text-align: center;
-    padding: 10px;
+    padding: 5px;
     position: fixed;
-    bottom: 0;
     width: 100%;
+    bottom: 0px;
     border-top: 5px solid #DAA520;
+}
+
+.btn-primary{
+    background-color: #1C3D5A;
+    color: #f9f9f9; 
+}
+.btn-primary:hover {
+    background-color: #f9f9f9; 
+    color: #1C3D5A; 
+}
+
+.dark-theme .btn-primary{
+    background-color: #222;
+    color: #FFD700; 
+}
+.dark-theme .btn-primary:hover {
+    background-color: #f9f9f9; 
+    color: #222; 
 }

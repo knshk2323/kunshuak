@@ -51,18 +51,23 @@
                     <label for="message" class="form-label">Message:</label>
                     <textarea class="form-control" id="message" name="message" rows="4" required></textarea>
                 </div>
-                <button type="button" class="btn btn-outline-secondary">Send</button>
+                <button type="button" class="btn btn-primary">Send</button>
             </form>
         </section>
 
         <section class="working-hours mb-5">
-            <h2 class="mb-3">Working Hours</h2>
-            <p>Monday - Sunday: 10am - 11pm</p>
+            <h2 class="mb-3 accordion-title">Working Hours</h2>
+            <div class="accordion-content">
+                <p>Monday - Friday: 06:00 - 00:00</p>
+                <p>Saturday - Sunday: 09:00 - 23:00</p>
+            </div>
         </section>
 
         <section class="reservation-info">
             <h2 class="mb-3">Table Reservations</h2>
             <p>To make a reservation, please call us at +7 777 123 4567 or email <a href="mailto:@restaurant.com" class="liinks">kiiz@ui.gmail</a></p>
+            <br>
+            <br>
             <br>
         </section>
         
@@ -70,7 +75,9 @@
 
     <footer>
         <p>&copy; Asset Kunshuak</p>
+        <button id="themeToggle" class="btn btn-primary"></button>
     </footer>
+    <script src="all.js"></script>
 
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>

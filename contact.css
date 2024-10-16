@@ -11,7 +11,7 @@ header {
     background-color: #1C3D5A;
     color: #DAA520;
     text-align: center;
-    padding: 15px;
+    padding: 20px;
     border-bottom: 5px solid #DAA520;
 }
 
@@ -43,7 +43,7 @@ section {
     max-width: 1200px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
     border-radius: 10px;
-    background-color: #fff;
+    
 }
 
 
@@ -60,7 +60,6 @@ h2 {
     background-color: #f9f9f9;
     border-radius: 8px;
 }
-
 
 
 .feedback-form input, .feedback-form textarea {
@@ -97,19 +96,74 @@ footer {
     width: 100%;
     border-top: 5px solid #DAA520;
 }
-.btn-primary{
-    background-color: #1C3D5A;
-    color: #f9f9f9; 
+
+
+
+/* Темная тема */
+.dark-theme {
+    background-color: #333;
+    color: #f5f5f5;
 }
-.btn-primary:hover {
+
+.dark-theme header {
+    background-color: #222;
+    color: #FFD700;
+}
+
+.dark-theme nav a {
+    color: #FFD700;
+}
+
+.dark-theme nav a:hover {
+    background-color: #FFD700;
+    color: #222;
+}
+
+.dark-theme section {
+    background-color: #555;
+    color: #f5f5f5;
+}
+
+.dark-theme body {
+    background-color: #555;
+}
+
+.dark-theme footer {
+    background-color: #222;
+    color: #FFD700;
+}
+
+
+.dark-theme .btn-primary{
+    background-color: #222;
+    color: #FFD700; 
+}
+.dark-theme .btn-primary:hover {
     background-color: #f9f9f9; 
-    color: #1C3D5A; 
+    color: #222; 
 }
-.btn-outline-secondary{
-    background-color: #1C3D5A;
-    color: #f9f9f9;
+.dark-theme .btn-outline-secondary{
+    background-color: #222;
+    color: #FFD700;
 }
-.btn-outline-secondary:hover{
+.dark-theme .btn-outline-secondary:hover{
     background-color: #f9f9f9;
-    color: #1C3D5A;
+    color: #222;
+}
+
+
+.accordion-content {
+    display: none;
+    overflow: hidden;
+    transition: max-height 0.3s ease;
+}
+
+.accordion-title {
+    cursor: pointer;
+    padding: 10px;
+    background-color: #f1f1f1;
+}
+
+.accordion-title:hover {
+    background-color: #ddd;
 }
