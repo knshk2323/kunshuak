@@ -6,6 +6,7 @@ body {
     padding: 0;
 }
 
+/* Стили для навигации */
 nav a {
     color: #DAA520; 
     text-decoration: none;
@@ -22,6 +23,7 @@ nav a:hover {
     transform: scale(1.1); 
 }
 
+/* Стили для заголовка */
 header {
     background-color: #1C3D5A;
     color: #DAA520;
@@ -30,7 +32,7 @@ header {
     border-bottom: 5px solid #DAA520;
 }
 
-header nav a:hover{
+header nav a:hover {
     color: #F5F5DC; 
 }
 
@@ -40,16 +42,17 @@ h1, h2 {
 }
 
 main {
-    display: flex;
-    justify-content: space-between;
+    display: flex; 
+    justify-content: space-between; 
     align-items: flex-start;
     padding: 20px;
     box-sizing: border-box;
-    gap: 20px; 
 }
 
+
 main section {
-    flex: 1;
+    max-width: 60%; 
+    margin-right: 20px; 
 }
 
 main img {
@@ -60,7 +63,7 @@ main img {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
 }
 
-
+/* Стили для темной темы */
 .dark-theme {
     background-color: #333;
     color: #f5f5f5;
@@ -80,46 +83,44 @@ main img {
     color: #222;
 }
 
-
-.dark-theme .dish-container {
-    background-color: #555;
-}
-
 .dark-theme footer {
     background-color: #222;
     color: #FFD700;
 }
 
-
+/* Стили для абзацев */
 p {
     line-height: 1.6; 
     margin-bottom: 1em; 
 }
+
 
 footer {
     background-color: #1C3D5A;
     color: #F5F5DC;
     text-align: center;
     padding: 5px;
-    position: fixed;
+    position: relative; 
     width: 100%;
-    bottom: 0px;
     border-top: 5px solid #DAA520;
 }
 
-.btn-primary{
+/* Стили для кнопки */
+.btn-primary {
     background-color: #1C3D5A;
     color: #f9f9f9; 
 }
+
 .btn-primary:hover {
     background-color: #f9f9f9; 
     color: #1C3D5A; 
 }
 
-.dark-theme .btn-primary{
+.dark-theme .btn-primary {
     background-color: #222;
     color: #FFD700; 
 }
+
 .dark-theme .btn-primary:hover {
     background-color: #f9f9f9; 
     color: #222; 

@@ -150,12 +150,17 @@ footer {
     color: #FFD700;
 }
 
-.dark-theme .btn-primary{
-    background-color: #222;
-    color: #FFD700; 
-}
-.dark-theme .btn-primary:hover {
-    background-color: #f9f9f9; 
-    color: #222; 
+
+.accordion-content {
+    display: none;
+    transition: max-height 0.3s ease;
 }
 
+.accordion-title {
+    cursor: pointer;
+    padding: 10px;
+}
+
+.accordion-title:hover {
+    background-color: #ddd;
+}
