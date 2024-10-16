@@ -32,4 +32,24 @@ function updateDateTime() {
 }
 
 setInterval(updateDateTime, 1000); // Update every second
-updateDateTime(); // Initial call
+updateDateTime(); 
+
+
+// Басқанда popup 
+document.getElementById('sendBtn').addEventListener('click', function () {
+    const popup = document.getElementById('sendPopup');
+    popup.style.display = 'flex'; // көрсетеді popup
+});
+
+// жапқанда  Close
+document.querySelector('.popup-close').addEventListener('click', function () {
+    const popup = document.getElementById('sendPopup');
+    popup.style.display = 'none'; // жабады popup
+});
+
+// шетіне басқанда попап жабылады 
+document.getElementById('sendPopup').addEventListener('click', function (e) {
+    if (e.target === document.getElementById('sendPopup')) {
+        document.getElementById('sendPopup').style.display = 'none';
+    }
+});
