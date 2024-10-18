@@ -21,35 +21,38 @@ document.addEventListener('DOMContentLoaded', function() {
             toggleButton.textContent = 'Dark theme';
         }
     });
-});
 
 
-
-function updateDateTime() {
-    const now = new Date();
-    const options = { year: 'numeric', month: 'long', day: 'numeric', hour: 'numeric', minute: 'numeric', second: 'numeric', hour12: true };
-    document.getElementById('currentDateTime').innerText = now.toLocaleString('en-US', options);
-}
-
-setInterval(updateDateTime, 1000); // Update every second
-updateDateTime(); 
-
-
-// Басқанда popup 
-document.getElementById('sendBtn').addEventListener('click', function () {
-    const popup = document.getElementById('sendPopup');
-    popup.style.display = 'flex'; // көрсетеді popup
-});
-
-// жапқанда  Close
-document.querySelector('.popup-close').addEventListener('click', function () {
-    const popup = document.getElementById('sendPopup');
-    popup.style.display = 'none'; // жабады popup
-});
-
-// шетіне басқанда попап жабылады 
-document.getElementById('sendPopup').addEventListener('click', function (e) {
-    if (e.target === document.getElementById('sendPopup')) {
-        document.getElementById('sendPopup').style.display = 'none';
+    function updateDateTime() {
+        const now = new Date();
+        const options = { year: 'numeric', month: 'long', day: 'numeric', hour: 'numeric', minute: 'numeric', second: 'numeric', hour12: true };
+        document.getElementById('currentDateTime').innerText = now.toLocaleString('en-US', options);
     }
-});
+    
+    setInterval(updateDateTime, 1000); // Update every second
+    updateDateTime(); 
+    
+    
+
+    document.querySelectorAll('.accordion-title').forEach(title => {
+            title.addEventListener('click', function () {
+                const content = this.nextElementSibling;
+                
+
+                document.querySelectorAll('.accordion-content').forEach(section => {
+                    if (section !== content) {
+                        section.style.maxHeight = null; 
+                    }
+                });
+
+
+                if (content.style.maxHeight) {
+                    content.style.maxHeight = null;
+                } else {
+                    content.style.maxHeight = content.scrollHeight + "px";
+                }
+            });
+        }); 
+});   
+
+ 
