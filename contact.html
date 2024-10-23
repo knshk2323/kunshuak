@@ -37,7 +37,7 @@
                 <button type="submit" class="btn btn-primary" id="loginBtn">Login</button>
             </form>
 
-            <!-- POPUP-->
+            <!-- Модальное окно для успешного логина -->
             <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
                 <div class="modal-dialog">
                     <div class="modal-content">
@@ -104,33 +104,21 @@
             document.querySelectorAll('.accordion-title').forEach(function(title) {
             title.addEventListener('click', function() {
                 const content = this.nextElementSibling;
-            
+            // Toggle visibility of the clicked content
                 if (content.style.display === 'block') {
-                    content.style.display = 'none'; 
+                    content.style.display = 'none'; // Hide content
                 }
                 else {
-                    
+                    // Hide other open content
                     document.querySelectorAll('.accordion-content').forEach(function(item) {
                         item.style.display = 'none';
                     });
-                    content.style.display = 'block';
+                    content.style.display = 'block'; // Show the current content
                     }   
             });
             });
-
-            document.getElementById('loginForm').addEventListener('submit', function (event) {
-            event.preventDefault(); 
-        
-            const username = document.getElementById('username').value;
-            const password = document.getElementById('password').value;
-            if (username === 'admin' && password === '12345678') {               
-                const loginModal = new bootstrap.Modal(document.getElementById('loginModal'));
-                loginModal.show();
-            } else {
-                alert('Invalid username or password!');
-            }
-        });
-        });
+            
+    });
     </script>
     <script src="all.js"></script>
 </body>
