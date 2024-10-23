@@ -125,3 +125,25 @@ footer {
     background-color: #f9f9f9; 
     color: #222; 
 }
+
+
+
+@keyframes blink {
+    0% { opacity: 1; }
+    50% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+.blink {
+    animation: blink 1s ease infinite; /* Мигание */
+}
+
+@keyframes shift {
+    0% { transform: translateY(0); }
+    50% { transform: translateY(-5px); } /* Сдвиг вверх */
+    100% { transform: translateY(0); }
+}
+
+.shift {
+    animation: shift 0.5s ease; /* Легкий сдвиг */
+}

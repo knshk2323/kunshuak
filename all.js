@@ -34,11 +34,21 @@ document.addEventListener('DOMContentLoaded', function() {
             second: 'numeric',
             hour12: true
         };
-        document.getElementById('currentDateTime').innerText = now.toLocaleString('en-US', options);
+    
+        const dateTimeElement = document.getElementById('currentDateTime');
+        dateTimeElement.innerText = now.toLocaleString('en-US', options);
+        
+        dateTimeElement.classList.add('blink', 'shift');
+        
+        setTimeout(() => {
+            dateTimeElement.classList.remove('blink', 'shift');
+        }, 1000); 
     }
+    
+    document.getElementById('updateTimeBtn').addEventListener('click', updateDateTime);
+    
+    
 
-    // Событие для обновления времени по кнопке
-    document.getElementById('updateTimeBtn').addEventListener('click', updateDateTime); 
     
     
 
@@ -61,47 +71,30 @@ document.addEventListener('DOMContentLoaded', function() {
                 }
             });
         }); 
-
-    
 });   
 
-document.getElementById('loginForm').addEventListener('submit', function (event) {
-    event.preventDefault(); 
+ let button = document.getElementById('themeToggle');
 
-    const username = document.getElementById('username').value;
-    const password = document.getElementById('password').value;
-
-    // тексеру
-    if (username === 'admin' && password === '12345678') {               
-        const loginModal = new bootstrap.Modal(document.getElementById('loginModal'));
-        loginModal.show();
-
-        // логин пароль тазалайды
-        document.getElementById('username').value = '';
-        document.getElementById('password').value = '';
-    } else {
-        alert('Invalid username or password!');
-    }
-});
-
-
-
-// батырмаға звук
-let button = document.getElementById('themeToggle');
-button.addEventListener('click', () => {
-let sound = new Audio('sound.mp3');
-sound.play();
-});
-
-button1.addEventListener('click', () => {
+ button.addEventListener('click', () => {
     let sound = new Audio('sound.mp3');
     sound.play();
  });
-// Load weather on button click
-document.getElementById('getWeatherBtn').addEventListener('click', function() {
+
+ let button1 = document.getElementById('getWeatherBtn');
+
+ button1.addEventListener('click', () => {
+    let sound = new Audio('sound.mp3');
+    sound.play();
+ });
+
+ document.getElementById('getWeatherBtn').addEventListener('click', function() {
     const apiKey = 'f31f5ea28ceb56f1b59a677de69c9702'; // Your API key
     const city = 'Astana'; // The city for which to display the weather
     const url = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
+
+    // Добавление классов анимации к weatherInfo перед обновлением
+    const weatherInfo = document.getElementById('weatherInfo');
+    weatherInfo.classList.add('blink', 'shift');
 
     fetch(url)
         .then(response => {
@@ -112,7 +105,6 @@ document.getElementById('getWeatherBtn').addEventListener('click', function() {
             return response.json();
         })
         .then(data => {
-            const weatherInfo = document.getElementById('weatherInfo');
             weatherInfo.innerHTML = `
                 <h3>Weather in ${data.name}</h3>
                 <p>Temperature: ${data.main.temp}°C</p>
@@ -121,5 +113,15 @@ document.getElementById('getWeatherBtn').addEventListener('click', function() {
         })
         .catch(error => {
             console.error('Error fetching weather data:', error);
+        })
+        .finally(() => {
+            // Удаляем классы анимации после завершения
+            setTimeout(() => {
+                weatherInfo.classList.remove('blink', 'shift');
+            }, 1000); // Время совпадает с длительностью анимации
         });
 });
+
+
+
+
