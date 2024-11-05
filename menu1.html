@@ -18,6 +18,16 @@
             <a class="nav-link" href="contact.html">Contact</a>
         </nav>
     </header>
+    <section class="price-filter">
+        <h2>Price Filter</h2>
+        <label for="minPrice">Minimum Price:</label>
+        <input type="number" id="minPrice" placeholder="Enter minimum price" />
+        
+        <label for="maxPrice">Maximum Price:</label>
+        <input type="number" id="maxPrice" placeholder="Enter maximum price" />
+        
+        <button id="filterBtn" class="btn btn-primary">Apply Filter</button>
+    </section>
 
     <section class="menu-categories">
         <h2>Categories</h2>
@@ -32,7 +42,7 @@
     <section class="menu-items" id="1tagam">
         <h2>Birinshi taǵamdar</h2>
         <ul>
-            <li>
+            <li data-price="1100">
                 <div class="dish-container">
                     <div>
                         <h3>Jasymyq sorpasy</h3>
@@ -42,7 +52,7 @@
                     <img src="tt5.jpg" alt="Jasymyq sorpasy" class="dish-photo">
                 </div>
             </li>
-            <li>
+            <li data-price="2500">
                 <div class="dish-container">
                     <div>
                         <h3>Bódene qosylǵan sorpa</h3>
@@ -52,7 +62,7 @@
                     <img src="tt6.jpg" alt="Bódene qosylǵan sorpa" class="dish-photo">
                 </div>
             </li>
-            <li>
+            <li data-price="1700">
                 <div class="dish-container">
                     <div>
                         <h3>Qumyradaǵy sorpa</h3>
@@ -64,11 +74,11 @@
             </li>
         </ul>
     </section>
-
+    
     <section class="menu-items" id="2tagam">
         <h2>Ekinshi taǵamdar</h2>
         <ul>
-            <li>
+            <li data-price="2300">
                 <div class="dish-container">
                     <div>
                         <h3>Qazan qýyrdaq</h3>
@@ -78,7 +88,7 @@
                     <img src="tt9.jpg" alt="Qazan qýyrdaq" class="dish-photo">
                 </div>
             </li>
-            <li>
+            <li data-price="2700">
                 <div class="dish-container">
                     <div>
                         <h3>Aqserkeden jasalǵan steık</h3>
@@ -88,7 +98,7 @@
                     <img src="tt7.jpg" alt="Aqserkeden jasalǵan steık" class="dish-photo">
                 </div>
             </li>
-            <li>
+            <li data-price="2800">
                 <div class="dish-container">
                     <div>
                         <h3>Fishbarmaq</h3>
@@ -100,11 +110,11 @@
             </li>
         </ul>
     </section>
-
+    
     <section class="menu-items" id="tis">
         <h2>Tiske basarlar</h2>
         <ul>
-            <li>
+            <li data-price="2300">
                 <div class="dish-container">
                     <div>
                         <h3>Ásip</h3>
@@ -114,7 +124,7 @@
                     <img src="tt1.jpg" alt="Ásip" class="dish-photo">
                 </div>
             </li>
-            <li>
+            <li data-price="3500">
                 <div class="dish-container">
                     <div>
                         <h3>Bas tabaq</h3>
@@ -126,12 +136,11 @@
             </li>
         </ul>
     </section>
-
-
+    
     <section class="menu-items" id="susyn">
         <h2>Sýsyndar</h2>
         <ul>
-            <li>
+            <li data-price="700">
                 <div class="dish-container">
                     <div>
                         <h3>Tary sháı</h3>
@@ -139,7 +148,7 @@
                     </div>
                 </div>
             </li>
-            <li>
+            <li data-price="1500">
                 <div class="dish-container">
                     <div>
                         <h3>Qymyz</h3>
@@ -147,7 +156,7 @@
                     </div>
                 </div>
             </li>
-            <li>
+            <li data-price="1700">
                 <div class="dish-container">
                     <div>
                         <h3>Shubat</h3>
@@ -155,7 +164,7 @@
                     </div>
                 </div>
             </li>
-            <li>
+            <li data-price="400">
                 <div class="dish-container">
                     <div>
                         <h3>Sý</h3>
@@ -174,3 +183,4 @@
     <script src="all.js"></script>
 </body>
 </html>
+
