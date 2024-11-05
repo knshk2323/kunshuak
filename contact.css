@@ -147,6 +147,53 @@ footer {
 }
 
 
+.dark-theme .form-container {
+    background-color: #333;
+    color: #f5f5f5;
+    border: 1px solid #444;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+.dark-theme .form-title {
+    color: #FFD700;
+}
+
+.dark-theme .input-group input {
+    background-color: #555;
+    color: #f5f5f5;
+    border: 1px solid #666;
+}
+
+.dark-theme .input-group label {
+    color: #FFD700;
+    background: #333;
+}
+
+.dark-theme .input-group .icon {
+    color: #FFD700;
+}
+
+.dark-theme .btn {
+    background-color: #444;
+    color: #f5f5f5;
+    border: 1px solid #666;
+}
+
+.dark-theme .btn:hover {
+    background-color: #FFD700;
+    color: #222;
+}
+
+.dark-theme .links a {
+    color: #FFD700;
+}
+
+.dark-theme .messageDiv {
+    color: #FFD700;
+}
+
+
+
 
 .accordion-content {
     display: none;
@@ -161,4 +208,65 @@ footer {
 .accordion-title:hover {
     background-color: #ddd;
 }
+
+
+
+
+.form-container {
+    margin: 0 auto;
+    padding: 20px;
+    max-width: 1200px;
+    border-radius: 10px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    color: #DAA520;
+}
+.form-title {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+}
+.input-group {
+    position: relative;
+    margin-bottom: 1.5rem;
+}
+.input-group input {
+    width: 100%;
+    padding: 10px;
+    padding-left: 30px;
+    border-radius: 4px;
+    border: 1px solid #ddd;
+}
+.input-group label {
+    font-size: 0.85rem;
+    position: absolute;
+    top: -12px;
+    left: 30px;
+    background: #f9f9f9;
+    padding: 0 5px;
+}
+.input-group .icon {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    color: #777;
+}
+.btn {
+    border-radius: 4px;
+}
+.or {
+    color: #888;
+    font-size: 0.9rem;
+}
+.links p {
+    margin: 0;
+    font-size: 0.9rem;
+}
+.recover a {
+    color: #007bff;
+}
+.messageDiv {
+    font-size: 0.85rem;
+}
+
+
 

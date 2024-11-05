@@ -92,7 +92,6 @@ document.addEventListener('DOMContentLoaded', function() {
     const city = 'Astana'; // The city for which to display the weather
     const url = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
 
-    // Добавление классов анимации к weatherInfo перед обновлением
     const weatherInfo = document.getElementById('weatherInfo');
     weatherInfo.classList.add('blink', 'shift');
 
@@ -115,13 +114,12 @@ document.addEventListener('DOMContentLoaded', function() {
             console.error('Error fetching weather data:', error);
         })
         .finally(() => {
-            // Удаляем классы анимации после завершения
+ 
             setTimeout(() => {
                 weatherInfo.classList.remove('blink', 'shift');
             }, 1000); // Время совпадает с длительностью анимации
         });
 });
-
 
 
 
