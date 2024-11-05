@@ -95,6 +95,7 @@
                         <p>aqserke eti, kartop, Fishbarmaq</p>
                         <p>Price: 2700 tg</p>
                     </div>
+
                     <img src="tt7.jpg" alt="Aqserkeden jasalǵan steık" class="dish-photo">
                 </div>
             </li>
@@ -176,11 +177,64 @@
     </section>
     <br>
     <br>
+    <br>
     <footer>
         <p>&copy;Asset Kunshuak</p>
         <button id="themeToggle" class="btn btn-primary"></button>
     </footer>
-    <script src="all.js"></script>
+
+
+    <script>
+    document.addEventListener('DOMContentLoaded', function() {
+        const toggleButton = document.getElementById('themeToggle');  
+        const currentTheme = localStorage.getItem('theme');
+
+        // загрузкадағы тема
+        if (currentTheme === 'dark') {
+            document.body.classList.add('dark-theme');
+            toggleButton.textContent = 'Light theme';
+        } else {
+            toggleButton.textContent = 'Dark theme';
+        }
+        // өзгергенде
+        toggleButton.addEventListener('click', function() {
+            document.body.classList.toggle('dark-theme');
+
+            if (document.body.classList.contains('dark-theme')) {
+                localStorage.setItem('theme', 'dark');
+                toggleButton.textContent = 'Light theme';
+            } else {
+                localStorage.setItem('theme', 'light');
+                toggleButton.textContent = 'Dark theme';
+            }
+        });
+    });
+    
+
+        const filterButton = document.getElementById('filterBtn');
+        if (filterButton) {
+            filterButton.addEventListener('click', function() {
+                console.log('Filter button clicked'); 
+
+                const minPrice = parseFloat(document.getElementById('minPrice').value) ;
+                const maxPrice = parseFloat(document.getElementById('maxPrice').value) ;
+
+                console.log('Min Price:', minPrice, 'Max Price:', maxPrice); 
+
+                // бағасына қарай көрсетеді
+                document.querySelectorAll('.menu-items li').forEach(dish => {
+                    const price = parseFloat(dish.getAttribute('data-price'));
+                    console.log('Dish Price:', price); 
+
+                    if (price >= minPrice && price <= maxPrice) {
+                        dish.style.display = 'block'; // көрсетеді
+                    } else {
+                        dish.style.display = 'none'; // жасырады
+                    }
+                });
+            });
+    }
+    </script>
+
 </body>
 </html>
-
