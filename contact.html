@@ -36,6 +36,7 @@
             <p>Email: <a href="mailto:info@restaurant.com" class="liinks">info@restaurant.com</a></p>
         </section>
         
+        
         <!-- Registration Form -->
     <div class="container form-container" id="signup" style="display:none;">
         <h1 class="form-title text-center">Register</h1>
@@ -98,6 +99,7 @@
     </div>
     <br>
     <br>
+        
     <!-- Login Success Modal -->
     <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered">
@@ -229,6 +231,13 @@
             document.getElementById('signInMessage').style.display = 'block';
             document.getElementById('signInMessage').innerText = 'Invalid email or password!';
         }
+    });
+
+
+
+    document.getElementById('signUpButton').addEventListener('click', function() {
+        const signUpModal = new bootstrap.Modal(document.getElementById('signupModal'));
+        signUpModal.show();
     });
     </script>
     <script src="all.js"></script>

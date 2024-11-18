@@ -148,16 +148,18 @@ footer {
     animation: shift 0.5s ease; /* Легкий сдвиг */
 }
 
-.carousel {
-    max-width: 100%;
+
+/* Carousel auto-resizes based on screen width */
+.carousel-inner img {
+    width: 100%;
+    height: auto;  /* Keeps aspect ratio */
+    max-height: 500px;  /* Optional max-height for larger screens */
 }
 
-@media (max-width: 768px) {
-    main {
-        flex-direction: column;
-    }
-    .carousel-inner img {
-        width: 100%;
-        height: auto;
+/* Limit carousel size on larger screens */
+@media (min-width: 768px) {
+    #restCarousel {
+        max-width: 600px;
+        margin: auto;
     }
 }

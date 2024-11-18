@@ -122,27 +122,3 @@ footer {
     background-color: #222;
     color: #FFD700;
 }
-
-
-
-
-/*анимация для кнопкиии */
-@keyframes blink {
-    0% { opacity: 1; }
-    50% { opacity: 0; }
-    100% { opacity: 1; }
-}
-
-.blink {
-    animation: blink 1s ease infinite; 
-}
-
-@keyframes shift {
-    0% { transform: translateY(0); }
-    50% { transform: translateY(-5px); } 
-    100% { transform: translateY(0); }
-}
-
-.shift {
-    animation: shift 0.5s ease; 
-}

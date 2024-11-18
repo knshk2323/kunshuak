@@ -211,6 +211,14 @@
     });
     
 
+    let button = document.getElementById('themeToggle');
+
+    button.addEventListener('click', () => {
+    let sound = new Audio('sound.mp3');
+    sound.play();
+    });
+
+
         const filterButton = document.getElementById('filterBtn');
         if (filterButton) {
             filterButton.addEventListener('click', function() {
@@ -233,7 +241,7 @@
                     }
                 });
             });
-    }
+        }
     </script>
 
 </body>

@@ -23,6 +23,8 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 
 
+    
+
     function updateDateTime() {
         const now = new Date();
         const options = {
@@ -46,10 +48,6 @@ document.addEventListener('DOMContentLoaded', function() {
     }
     
     document.getElementById('updateTimeBtn').addEventListener('click', updateDateTime);
-    
-    
-
-    
     
 
     document.querySelectorAll('.accordion-title').forEach(title => {
@@ -80,14 +78,10 @@ document.addEventListener('DOMContentLoaded', function() {
     sound.play();
  });
 
- let button1 = document.getElementById('getWeatherBtn');
 
- button1.addEventListener('click', () => {
-    let sound = new Audio('sound.mp3');
-    sound.play();
- });
 
- document.getElementById('getWeatherBtn').addEventListener('click', function() {
+
+document.getElementById('getWeatherBtn').addEventListener('click', function() {
     const apiKey = 'f31f5ea28ceb56f1b59a677de69c9702'; // Your API key
     const city = 'Astana'; // The city for which to display the weather
     const url = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
@@ -120,6 +114,7 @@ document.addEventListener('DOMContentLoaded', function() {
             }, 1000); // Время совпадает с длительностью анимации
         });
 });
+
 
 
 
